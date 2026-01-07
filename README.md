@@ -7,6 +7,12 @@ The image is based on the Elixir Alpine docker image.
 
 ## Recent Changes
 
+### 2025-01-06
+* Updated stack:
+  * PostgreSQL client - 18.1
+  * Phoenix Framework 1.8.3
+  * Alpine Linux 3.23.2
+
 ### 2025-11-25
 * Update to Elixir 1.19.3 and Phoenix Framework 1.8.2
 
@@ -143,7 +149,7 @@ cat /etc/alpine-release
 ```
 
 >  
-> 3.22.2  
+> 3.23.2  
 >  
 
 ```shell
@@ -151,7 +157,7 @@ psql --version
 ```
 
 >  
-> psql (PostgreSQL) 17.7  
+> psql (PostgreSQL) 18.1  
 >   
 
 ```shell
@@ -161,7 +167,7 @@ elixir --version
 >  
 > Erlang/OTP 28 ...
 >  
-> Elixir 1.19.3 ...
+> Elixir 1.19.4 ...
 >  
 
 
@@ -216,12 +222,14 @@ directory will be populated with the baseline Phoenix Framwork application.
 
 ```shell
 export APP_NAME=app
+```
 
+```shell
 docker run --name myapp -it -e APP_NAME=$APP_NAME --rm -p 4000:4000 -w "/opt/phoenix/$APP_NAME" --mount type=bind,src="$(pwd)/src",target="/opt/phoenix/$APP_NAME" aviumlabs/phoenix:latest-alpine 
 ```
 >  
 > Generated myapp app  
-> [info] Running MyappWeb.Endpoint with Bandit 1.8.0 at 0.0.0.0:4000 (http)  
+> [info] Running MyappWeb.Endpoint with Bandit 1.10.1 at 0.0.0.0:4000 (http)  
 > [info] Access MyappWeb.Endpoint at http://localhost:4000  
 > [watch] build finished, watching for changes...  
 > ...    
@@ -277,8 +285,8 @@ project integrated with PostgreSQL.
 The aviumlabs/phoenix-compose repo is also a template repository.   
 
 The services included are:  
-- PostgreSQL 17.5 
-- Phoenix Framework 1.8.1 or later  
+- PostgreSQL 17.7 
+- Phoenix Framework 1.8.3 or later  
 
 
 ## Project Notes

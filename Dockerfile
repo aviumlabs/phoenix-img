@@ -21,10 +21,10 @@ RUN apk add --no-cache \
     inotify-tools \
     git 
 
-COPY docker-entrypoint.sh /usr/local/bin/
-RUN chmod +x /usr/local/bin/docker-entrypoint.sh
+COPY entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/entrypoint.sh
 
-ENTRYPOINT ["docker-entrypoint.sh"]
+ENTRYPOINT ["entrypoint.sh"]
 
 USER phoenix
 

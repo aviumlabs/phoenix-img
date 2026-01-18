@@ -167,7 +167,7 @@ elixir --version
 >  
 > Erlang/OTP 28 ...
 >  
-> Elixir 1.19.4 ...
+> Elixir 1.19.5 ...
 >  
 
 
@@ -234,7 +234,7 @@ docker run --name myapp -it -e APP_NAME=$APP_NAME --rm -p 4000:4000 -w "/opt/pho
 > [watch] build finished, watching for changes...  
 > ...    
 >   
-> Done in 382ms.  
+> Done in 322ms.  
 >  
 
 Browsing to http://localhost:4000 will show you the default landing page of a 

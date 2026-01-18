@@ -7,9 +7,11 @@ The image is based on the Elixir Alpine docker image.
 
 ## Recent Changes
 
-### 2025-01-06
+### 2026-01-17
 * Updated stack:
   * PostgreSQL client - 18.1
+  * Elixir 1.19.5
+  * Erlang/OTOP 28
   * Phoenix Framework 1.8.3
   * Alpine Linux 3.23.2
 

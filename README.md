@@ -339,6 +339,15 @@ docker push aviumlabs/phoenix:latest-alpine
 
 ## Project Tags
 
+### Release Tag v1.3.0
+
+This release is pinned to the Elixir docker image - elixir:1.19-alpine.
+
+* Alpine Linux 3.23.x
+* Erlang 28.x
+* Elixir 1.19.x
+* Phoenix Framework 1.8.x
+
 ### Release Tag v1.2.0
 
 This release is pinned to the Elixir docker image - elixir:1.18-alpine.

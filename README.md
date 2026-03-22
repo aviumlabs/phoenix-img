@@ -7,9 +7,12 @@ The image is based on the Elixir Alpine docker image.
 
 ## Recent Changes
 
+### 2026-03-07
+* Updated Phoenix Framework 1.8.5
+
 ### 2026-02-16
 * Updated stack:
-  * PostgreSQL client - 18.2
+  * PostgreSQL client 18.2
   * Elixir 1.19.5
   * Erlang/OTOP 28
   * Phoenix Framework 1.8.3
@@ -231,7 +234,7 @@ docker run --name myapp -it -e APP_NAME=$APP_NAME --rm -p 4000:4000 -w "/opt/pho
 ```
 >  
 > Generated myapp app  
-> [info] Running MyappWeb.Endpoint with Bandit 1.10.2 at 0.0.0.0:4000 (http)  
+> [info] Running MyappWeb.Endpoint with Bandit 1.10.3 at 0.0.0.0:4000 (http)  
 > [info] Access MyappWeb.Endpoint at http://localhost:4000  
 > [watch] build finished, watching for changes...  
 > ...    

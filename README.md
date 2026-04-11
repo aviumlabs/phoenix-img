@@ -162,7 +162,7 @@ psql --version
 ```
 
 >  
-> psql (PostgreSQL) 18.2  
+> psql (PostgreSQL) 18.3  
 >   
 
 ```shell
@@ -234,7 +234,7 @@ docker run --name myapp -it -e APP_NAME=$APP_NAME --rm -p 4000:4000 -w "/opt/pho
 ```
 >  
 > Generated myapp app  
-> [info] Running MyappWeb.Endpoint with Bandit 1.10.3 at 0.0.0.0:4000 (http)  
+> [info] Running MyappWeb.Endpoint with Bandit 1.10.4 at 0.0.0.0:4000 (http)  
 > [info] Access MyappWeb.Endpoint at http://localhost:4000  
 > [watch] build finished, watching for changes...  
 > ...    

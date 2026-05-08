@@ -7,9 +7,12 @@ The image is based on the Elixir Alpine docker image.
 
 ## Recent Changes
 
+### 2026-05-07
+* Updated image to Phoenix Framework 1.8.7
+
 ### 2026-04-17
 * Updated stack:
-  * PostgreSQL client: 18.3
+  * PostgreSQL client: 18.3`
   * Alpine Liinux: 3.23.4
 
 ### 2026-03-07

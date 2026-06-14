@@ -2,7 +2,9 @@
 
 This repo builds a Phoenix Framework docker image. 
 
-The image is based on the Elixir Alpine docker image.   
+The image is based on the Elixir Alpine docker image.  
+
+GitHub: https://github.com/aviumlabs/phoenix-img
 
 
 ## Image Naming Convention

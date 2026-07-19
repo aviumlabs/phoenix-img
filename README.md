@@ -64,7 +64,7 @@ docker build --pull --no-cache -t aviumlabs/phoenix:latest-alpine --provenance=m
 To build a specific version of Phoenix Framework; pass in the Phoenix 
 version you want to build:   
 ```shell
-export PHX_VERSION=1.7.21
+export PHX_VERSION=1.8.8
 ```
 
 To build release candidate 4 of Phoenix 1.8:  
@@ -103,7 +103,7 @@ cat /etc/alpine-release
 ```
 
 >  
-> 3.23.3  
+> 3.23.5  
 >  
 
 ```shell
@@ -111,7 +111,7 @@ psql --version
 ```
 
 >  
-> psql (PostgreSQL) 18.3  
+> psql (PostgreSQL) 18.34 
 >   
 
 ```shell
@@ -119,9 +119,9 @@ elixir --version
 ```
 
 >  
-> Erlang/OTP 28 ...
+> Erlang/OTP 29 ...
 >  
-> Elixir 1.19.5 ...
+> Elixir 1.20.1 ...
 >  
 
 
@@ -290,6 +290,15 @@ docker push aviumlabs/phoenix:latest-alpine
 ```
 
 ## Project Tags
+
+### Release Tag v1.4.0
+
+This release is pinned to the Elixir docker image - elixir:1.20-alpine.
+
+* Alpine Linux 3.23.x
+* Erlang 29.x
+* Elixir 1.20.x
+* Phoenix Framework 1.8.x
 
 ### Release Tag v1.3.0
 

@@ -1,13 +1,19 @@
 ## Recent Changes
 
-* Updated image to Phoenix Framework 1.8.8
+### 2026-07-19
+* Updated stack:
+  * PostgreSQL client: 18.4
+  * Elixir 1.20.1
+  * Erlang/OTOP 29
+  * Phoenix Framework 1.8.9
+  * Alpine Linux 3.23.5
 
 ### 2026-05-07
 * Updated image to Phoenix Framework 1.8.7
 
 ### 2026-04-17
 * Updated stack:
-  * PostgreSQL client: 18.3`
+  * PostgreSQL client: 18.3
   * Alpine Liinux: 3.23.4
 
 ### 2026-03-07

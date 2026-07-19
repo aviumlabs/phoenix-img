@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM elixir:1.19-alpine
+FROM elixir:1.20-alpine
 
 ARG PHX_VERSION=''
 

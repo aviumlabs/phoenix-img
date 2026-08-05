@@ -6,6 +6,8 @@ The image is based on the Elixir Alpine docker image.
 
 GitHub: https://github.com/aviumlabs/phoenix-img
 
+For the latest changes: CHANGELOG.md
+
 
 ## Image Naming Convention
 The image naming convention is divided between **Standard** and **Extended**.
@@ -84,7 +86,10 @@ Run the docker image and confirm Alpine version, PostgreSQL client version.
 Run container in the foreground:  
 ```shell
 export APP_NAME=app
+```
 
+
+```shell
 docker run --name app -it -e APP_NAME=$APP_NAME --rm -p 4000:4000 -w "/opt/phoenix/$APP_NAME" --mount type=bind,src="$(pwd)/src",target="/opt/phoenix/$APP_NAME" aviumlabs/phoenix:latest-alpine
 ```
 
@@ -111,7 +116,7 @@ psql --version
 ```
 
 >  
-> psql (PostgreSQL) 18.34 
+> psql (PostgreSQL) 18.4 
 >   
 
 ```shell
@@ -183,11 +188,12 @@ docker run --name myapp -it -e APP_NAME=$APP_NAME --rm -p 4000:4000 -w "/opt/pho
 ```
 >  
 > Generated myapp app  
-> [info] Running MyappWeb.Endpoint with Bandit 1.12.0 at 0.0.0.0:4000 (http)  
+> [info] Running MyappWeb.Endpoint with Bandit 1.12.4 at 0.0.0.0:4000 (http)  
 > [info] Access MyappWeb.Endpoint at http://localhost:4000  
 > [watch] build finished, watching for changes...  
+> = tailwindcss v4.3.0
 > ...    
->   
+> /*! ... daisyUI 5.5.20 */  
 > Done in 322ms.  
 >  
 

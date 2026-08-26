@@ -1,5 +1,9 @@
 ## Recent Changes
 
+### 2026-08-26
+* Updated stack:
+  * Phoenix Framework 1.8.13
+
 ### 2026-08-23
 * Updated stack:
   * PostgreSQL client: 18.6

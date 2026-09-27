@@ -83,6 +83,34 @@ docker build --pull --no-cache -t aviumlabs/phoenix:$PHX_VERSION-alpine \
 ## Run
 Run the docker image and confirm Alpine version, PostgreSQL client version.
 
+### Ubuntu
+To run this image on Ubuntu, create a `phoenix` system user with a `nologinshell`:
+
+```
+sudo groupadd -r -g 935 phoenix
+```
+
+```
+sudo useradd -r -u 935 -g 935 -m -s /usr/sbin/nologin phoenix
+```
+
+Add yourself to the phoenix group:
+```
+sudo usermod -aG phoenix <username>
+```
+
+Set the src directory permissions:
+```
+sudo chown phoenix:phoenix src
+```
+
+```
+sudo chmod 770 src
+```
+
+
+### Start Runtime
+
 Run container in the foreground:  
 ```shell
 export APP_NAME=app
